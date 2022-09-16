@@ -56,7 +56,7 @@ $(document).ready(function() {
     
 
 
-        let subMedia = window.matchMedia("(min-width: 780px)");
+        let subMedia = window.matchMedia("(min-width: 781px)");
         function subMediaFunc(){
             if(subMedia.matches) {
                 $(".navbar-menu__subcategory-list").autocolumnlist({
@@ -86,12 +86,17 @@ $(document).ready(function() {
     headerScroll();
     $(window).scroll(headerScroll);
 
+
 });
 
-(function($){
-    $(window).on("load",function(){
-        $(".navbar-menu__subcategory").mCustomScrollbar({
-            theme:"dark"
-        });
-    });
-})(jQuery);
+// (function($){
+//     $(window).on("load",function(){
+//         $(".navbar-menu__subcategory").mCustomScrollbar({
+//             theme:"dark"
+//         });
+//         $(".navbar-menu__category").mCustomScrollbar({
+//             theme:"dark",
+//             advanced:{ updateOnContentResize: true }
+//         });
+//     });
+// })(jQuery);
