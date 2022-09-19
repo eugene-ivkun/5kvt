@@ -38,38 +38,38 @@ $(document).ready(function() {
             btn.toggleClass("active");
         })
 
-        $(document).click(function(e) {
-            let menuBtn = $(e.target).closest(".menu-open")
-            if( menuBtn.length ) {
-                let menuDropdown = $(".navbar-menu__dropdown");
-                menuDropdown.find(".active").removeClass("active");
-                menuDropdown.toggleClass("active");
-                menuBtn.toggleClass("active");
-            }
-            if( !$(e.target).closest(".navbar-menu__dropdown, .menu-open").length) {
-                $(".navbar-menu__dropdown").find(".active").removeClass("active");
-                $(".navbar-menu__dropdown").removeClass("active");
-                $(".menu-open.active").removeClass("active");
-            }
-        })
+        // $(document).click(function(e) {
+        //     let menuBtn = $(e.target).closest(".menu-open")
+        //     if( menuBtn.length ) {
+        //         let menuDropdown = $(".navbar-menu__dropdown");
+        //         menuDropdown.find(".active").removeClass("active");
+        //         menuDropdown.toggleClass("active");
+        //         menuBtn.toggleClass("active");
+        //     }
+        //     if( !$(e.target).closest(".navbar-menu__dropdown, .menu-open").length) {
+        //         $(".navbar-menu__dropdown").find(".active").removeClass("active");
+        //         $(".navbar-menu__dropdown").removeClass("active");
+        //         $(".menu-open.active").removeClass("active");
+        //     }
+        // })
 
     
 
 
-        let subMedia = window.matchMedia("(min-width: 781px)");
-        function subMediaFunc(){
-            if(subMedia.matches) {
-                $(".navbar-menu__subcategory-list").autocolumnlist({
-                    classname: "navbar-menu__subcategory-col column",
-                    columns: 2
-                })
-            }
-            else{
-                $(".navbar-menu__subcategory-item ").unwrap(".navbar-menu__subcategory-col");
-            }
-        }
-        subMediaFunc();
-        subMedia.addEventListener("change", subMediaFunc);
+        // let subMedia = window.matchMedia("(min-width: 781px)");
+        // function subMediaFunc(){
+        //     if(subMedia.matches) {
+        //         $(".navbar-menu__subcategory-list").autocolumnlist({
+        //             classname: "navbar-menu__subcategory-col column",
+        //             columns: 2
+        //         })
+        //     }
+        //     else{
+        //         $(".navbar-menu__subcategory-item ").unwrap(".navbar-menu__subcategory-col");
+        //     }
+        // }
+        // subMediaFunc();
+        // subMedia.addEventListener("change", subMediaFunc);
     
     function headerScroll() {
         let windowTop = $(this).scrollTop();
