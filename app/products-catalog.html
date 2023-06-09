@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/light-gallery/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="libs/selectric/selectric.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page">
+    @@include('_header.html')
+    <main class="main">
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Каталог товаров</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <div class="catalog">
+                <div class="catalog__head">
+                    <h1 class="catalog__head-title title">Каталог товаров</h1>
+                    <div class="catalog__head-control">
+                        <div class="catalog__head-select-wrap">
+                            <label for="catalog-head-sort" class="catalog__head-select-label">Сортировать:</label>
+                            <select class="catalog__head-select custom-select custom-select--dropdown-primary" id="catalog-head-sort">
+                                <option value="1">По актуальности</option>
+                                <option value="2">Сначала дешовые</option>
+                                <option value="3">Сначала дорогие</option>
+                                <option value="4">По популяности</option>
+                            </select>
+                        </div>
+                        <div class="catalog__head-select-wrap catalog__head-select-wrap--num">
+                            <label for="catalog-head-num" class="catalog__head-select-label">Показывать:</label>
+                            <select class="catalog__head-select custom-select custom-select--dropdown-primary" id="catalog-head-num">
+                                <option value="1">по 12</option>
+                                <option value="2">по 18</option>
+                                <option value="3">по 24</option>
+                            </select>
+                        </div>
+                        <div class="catalog__btn-filter" data-popup-open="catalog-filter">
+                            <svg class="catalog__btn-filter-icon">
+                                <use href="img/sprite.svg#filter-icon"></use>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog__row">
+                    <aside class="catalog__filter modal" id="catalog-filter">
+                        <div class="catalog__filter-inner modal-inner">
+                            <button class="catalog__filter-close modal-close">
+                                <svg class="catalog__filter-close-icon">
+                                    <use href="img/sprite.svg#close-icon"></use>
+                                </svg>
+                            </button>
+                            <form class="catalog__filter-form">
+                                <div class="catalog__filter-category catalog__filter-row">
+                                    <div class="catalog__filter-category-part">
+                                        <div class="catalog__filter-title catalog__filter-title--sm-margin">Категория</div>
+                                        <select class="catalog__filter-select custom-select custom-select custom-select--dropdown-primary">
+                                            <option value="1">Инструмент</option>
+                                            <option value="1">Ручной инструмент</option>
+                                            <option value="1">Всё для сада</option>
+                                            <option value="1">Электрика и свет</option>
+                                            <option value="1">Автотовары</option>
+                                            <option value="1">Прочее оборудование и устройства</option>
+                                            <option value="1">Сантехника и инженерные системы</option>
+                                            <option value="1">Климат и отопление</option>
+                                            <option value="1">Крепёж</option>
+                                            <option value="1">Станки и промкомпоненты</option>
+                                        </select>
+                                    </div>
+                                    <div class="catalog__filter-category-part">
+                                        <div class="catalog__filter-title catalog__filter-title--sm-margin">Подкатегория</div>
+                                        <select class="catalog__filter-select custom-select custom-select--dropdown-primary">
+                                            <option value="1">Аккумуляторный инструмент</option>
+                                            <option value="1">Болгарки</option>
+                                            <option value="1">Гвоздезабиватели (степлеры)</option>
+                                            <option value="1">Генераторы (электростанции)</option>
+                                            <option value="1">Граверы</option>
+                                            <option value="1">Дрели</option>
+                                            <option value="1">Заклепочники</option>
+                                            <option value="1">Измерительный инструмент</option>
+                                            <option value="1">Инструмент и оборудование по видам работ</option>
+                                            <option value="1">Инструментальные наборы</option>
+                                            <option value="1">Ножницы по металлу</option>
+                                            <option value="1">Пилы</option>
+                                            <option value="1">Клуппы электрические</option>
+                                            <option value="1">Краскопульты</option>
+                                            <option value="1">Лобзики</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="catalog__filter-price catalog__filter-row">
+                                    <div class="catalog__filter-title catalog__filter-title--sm-margin">Цена</div>
+                                    <div class="catalog__filter-price-inner price-range">
+                                        <input type="text" class="catalog__filter-price-input price-range__input price-range__input--min" placeholder="от">
+                                        <input type="text" class="catalog__filter-price-input price-range__input price-range__input--max" placeholder="до">
+                                    </div>
+                                </div>
+                                <div class="catalog__filter-other catalog__filter-row">
+                                    <div class="catalog__filter-title">Бренд</div>
+                                    <div class="catalog__filter-checkbox-wrap">
+                                        <div class="catalog__filter-checkbox">
+                                            <input class="catalog__filter-checkbox-input" id="catalog-filter-checkbox-7" type="checkbox" value="1">
+                                            <label class="catalog__filter-checkbox-label" for="catalog-filter-checkbox-7">Bosh</label>
+                                        </div>
+                                        <div class="catalog__filter-checkbox">
+                                            <input class="catalog__filter-checkbox-input" id="catalog-filter-checkbox-8" type="checkbox" value="1">
+                                            <label class="catalog__filter-checkbox-label" for="catalog-filter-checkbox-8">Huter</label>
+                                        </div>
+                                        <div class="catalog__filter-checkbox">
+                                            <input class="catalog__filter-checkbox-input" id="catalog-filter-checkbox-9" type="checkbox" value="1">
+                                            <label class="catalog__filter-checkbox-label" for="catalog-filter-checkbox-9">Echo</label>
+                                        </div>
+                                        <div class="catalog__filter-checkbox">
+                                            <input class="catalog__filter-checkbox-input" id="catalog-filter-checkbox-10" type="checkbox" value="1">
+                                            <label class="catalog__filter-checkbox-label" for="catalog-filter-checkbox-10">Diam</label>
+                                        </div>
+                                        <div class="catalog__filter-checkbox">
+                                            <input class="catalog__filter-checkbox-input" id="catalog-filter-checkbox-11" type="checkbox" value="1">
+                                            <label class="catalog__filter-checkbox-label" for="catalog-filter-checkbox-11">Pecahta</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__filter-rating catalog__filter-row">
+                                    <div class="catalog__filter-title">Рейтинг</div>
+                                    <div class="catalog__filter-rating-inner">
+                                        <div class="rating-stars rating-stars--set">
+                                            <div class="rating-stars__inner">
+                                                <div class="rating-stars__item" data-rating-value="5">
+                                                    <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                                    </svg> 
+                                                </div>
+                                                <div class="rating-stars__item" data-rating-value="4">
+                                                    <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                                    </svg> 
+                                                </div>
+                                                <div class="rating-stars__item" data-rating-value="3">
+                                                    <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                                    </svg> 
+                                                </div>
+                                                <div class="rating-stars__item" data-rating-value="2">
+                                                    <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                                    </svg> 
+                                                </div>
+                                                <div class="rating-stars__item" data-rating-value="1">
+                                                    <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                                    </svg> 
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__filter-other catalog__filter-row">
+                                    <div class="catalog__filter-title">Другое</div>
+                                    <div class="catalog__filter-checkbox-wrap">
+                                        <div class="catalog__filter-checkbox">
+                                            <input class="catalog__filter-checkbox-input" id="catalog-filter-checkbox-1" type="checkbox" value="1">
+                                            <label class="catalog__filter-checkbox-label" for="catalog-filter-checkbox-1">Новинки</label>
+                                        </div>
+                                        <div class="catalog__filter-checkbox">
+                                            <input class="catalog__filter-checkbox-input" id="catalog-filter-checkbox-2" type="checkbox" value="1">
+                                            <label class="catalog__filter-checkbox-label" for="catalog-filter-checkbox-2">Скидки</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="catalog__filter-delivery">
+                                    <div class="catalog__filter-title">Доставка и наличие</div>
+                                    <div class="catalog__filter-checkbox-wrap">
+                                        <div class="catalog__filter-checkbox">
+                                            <input class="catalog__filter-checkbox-input" id="catalog-filter-checkbox-3" type="checkbox" value="1">
+                                            <label class="catalog__filter-checkbox-label" for="catalog-filter-checkbox-3">Доставка</label>
+                                        </div>
+                                        <div class="catalog__filter-checkbox">
+                                            <input class="catalog__filter-checkbox-input" id="catalog-filter-checkbox-4" type="checkbox" value="1">
+                                            <label class="catalog__filter-checkbox-label" for="catalog-filter-checkbox-4">Самовывоз</label>
+                                        </div>
+                                        <div class="catalog__filter-checkbox">
+                                            <input class="catalog__filter-checkbox-input" id="catalog-filter-checkbox-5" type="checkbox" value="1">
+                                            <label class="catalog__filter-checkbox-label" for="catalog-filter-checkbox-5">Под заказ</label>
+                                        </div>
+                                        <div class="catalog__filter-checkbox">
+                                            <input class="catalog__filter-checkbox-input" id="catalog-filter-checkbox-6" type="checkbox" value="1">
+                                            <label class="catalog__filter-checkbox-label" for="catalog-filter-checkbox-6">В наличии</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </aside>
+                    <div class="catalog__main">
+                        <div class="catalog__list">
+                            <div class="catalog__item">
+                                <article class="products-card">
+                                    <a href="#" class="products-card__main">
+                                        <div class="products-card__img">
+                                            <img src="img/products/Resanta-550-2.png" alt="Сетевой шуруповерт Ресанта СШ-550-2">
+                                        </div>
+                                        <div class="products-card__about">
+                                            <div class="products-card__about-model">Ресанта СШ-550-2</div>
+                                            <div class="products-card__about-name">Сетевой шуруповерт</div>
+                                        </div>
+                                    </a>
+                                    <div class="products-card__bottom">
+                                        <div class="products-card__wrap-price">
+                                            <div class="products-card__price-nums price-nums">
+                                                <span class="products-card__price price price--current">2 362</span>
+                                            </div>
+                                            <div class="products-card__chart">
+                                                <svg class="products-card__chart-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="products-card__btn-wrap">
+                                            <div class="products-card__cart-btn btn btn--primary">
+                                                <svg class="products-card__cart-icon btn__icon">
+                                                    <use href="img/sprite.svg#cart-icon"></use>
+                                                </svg>
+                                                <span class="products-card__btn-text">В корзину</span>
+                                            </div>
+                                            <div class="products-card__chart-mobile btn btn--primary">
+                                                <svg class="products-card__chart-mobile-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="products-card__like-btn">
+                                        <svg class="products-card__like-btn-icon">
+                                            <use  href="img/sprite.svg#heart-icon"></use>
+                                        </svg>
+                                    </button>
+                                </article>
+                            </div>
+                            <div class="catalog__item">
+                                <article class="products-card">
+                                    <a href="#" class="products-card__main">
+                                        <div class="products-card__img product-mark product-mark--new">
+                                            <img src="img/products/РЕСАНТА-ТЭПК-3000K.png" alt="Электрическая пушка РЕСАНТА-ТЭПК-3000K">
+                                        </div>
+                                        <div class="products-card__about">
+                                            <div class="products-card__about-model">РЕСАНТА ТЭПК-3000K</div>
+                                            <div class="products-card__about-name">Электрическая пушка</div>
+                                        </div>
+                                    </a>
+                                    <div class="products-card__bottom">
+                                        <div class="products-card__wrap-price">
+                                            <div class="products-card__price-nums price-nums">
+                                                <span class="products-card__price price price--current">3 007</span>
+                                            </div>
+                                            <div class="products-card__chart">
+                                                <svg class="products-card__chart-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="products-card__btn-wrap">
+                                            <div class="products-card__cart-btn btn btn--primary">
+                                                <svg class="products-card__cart-icon btn__icon">
+                                                    <use href="img/sprite.svg#cart-icon"></use>
+                                                </svg>
+                                                <span class="products-card__btn-text">В корзину</span>
+                                            </div>
+                                            <div class="products-card__chart-mobile btn btn--primary">
+                                                <svg class="products-card__chart-mobile-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="products-card__like-btn">
+                                        <svg class="products-card__like-btn-icon">
+                                            <use  href="img/sprite.svg#heart-icon"></use>
+                                        </svg>
+                                    </button>
+                                </article>
+                            </div>
+                            <div class="catalog__item">
+                                <article class="products-card">
+                                    <a href="#" class="products-card__main">
+                                        <div class="products-card__img">
+                                            <img src="img/products/HUTER-ECS-100.png" alt="Станок камнерезный HUTER ECS-100">
+                                        </div>
+                                        <div class="products-card__about">
+                                            <div class="products-card__about-model">HUTER ECS-100</div>
+                                            <div class="products-card__about-name">Станок камнерезный</div>
+                                        </div>
+                                    </a>
+                                    <div class="products-card__bottom">
+                                        <div class="products-card__wrap-price">
+                                            <div class="products-card__price-nums price-nums">
+                                                <span class="products-card__price price price--current">2 441</span>
+                                            </div>
+                                            <div class="products-card__chart">
+                                                <svg class="products-card__chart-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="products-card__btn-wrap">
+                                            <div class="products-card__cart-btn btn btn--primary">
+                                                <svg class="products-card__cart-icon btn__icon">
+                                                    <use href="img/sprite.svg#cart-icon"></use>
+                                                </svg>
+                                                <span class="products-card__btn-text">В корзину</span>
+                                            </div>
+                                            <div class="products-card__chart-mobile btn btn--primary">
+                                                <svg class="products-card__chart-mobile-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="products-card__like-btn">
+                                        <svg class="products-card__like-btn-icon">
+                                            <use  href="img/sprite.svg#heart-icon"></use>
+                                        </svg>
+                                    </button>
+                                </article>
+                            </div>
+                            <div class="catalog__item">
+                                <article class="products-card">
+                                    <a href="#" class="products-card__main">
+                                        <div class="products-card__img product-mark product-mark--new">
+                                            <img src="img/products/Resanta-600-1.png" alt="Стабилизатор напряжения РЕСАНТА АСН-600/1-И">
+                                        </div>
+                                        <div class="products-card__about">
+                                            <div class="products-card__about-model">РЕСАНТА АСН-600/1-И</div>
+                                            <div class="products-card__about-name">Стабилизатор напряжения</div>
+                                        </div>
+                                    </a>
+                                    <div class="products-card__bottom">
+                                        <div class="products-card__wrap-price">
+                                            <div class="products-card__price-nums price-nums">
+                                                <span class="products-card__price price price--current">7 185</span>
+                                            </div>
+                                            <div class="products-card__chart">
+                                                <svg class="products-card__chart-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="products-card__btn-wrap">
+                                            <div class="products-card__cart-btn btn btn--primary">
+                                                <svg class="products-card__cart-icon btn__icon">
+                                                    <use href="img/sprite.svg#cart-icon"></use>
+                                                </svg>
+                                                <span class="products-card__btn-text">В корзину</span>
+                                            </div>
+                                            <div class="products-card__chart-mobile btn btn--primary">
+                                                <svg class="products-card__chart-mobile-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="products-card__like-btn">
+                                        <svg class="products-card__like-btn-icon">
+                                            <use  href="img/sprite.svg#heart-icon"></use>
+                                        </svg>
+                                    </button>
+                                </article>
+                            </div>
+                            <div class="catalog__item">
+                                <article class="products-card">
+                                    <a href="#" class="products-card__main">
+                                        <div class="products-card__img product-mark product-mark--sell">
+                                            <img src="img/products/DIAM-JRK-500.png" alt="Резчик швов DIAM JRK-500/13.0L 630058">
+                                        </div>
+                                        <div class="products-card__about">
+                                            <div class="products-card__about-model">DIAM JRK-500/13.0L 630058</div>
+                                            <div class="products-card__about-name">Резчик швов</div>
+                                        </div>
+                                    </a>
+                                    <div class="products-card__bottom">
+                                        <div class="products-card__wrap-price">
+                                            <div class="products-card__price-nums price-nums">
+                                                <span class="products-card__price price price--current">85 200</span>
+                                                <span class="products-card__price price price--old">93 200</span>
+                                            </div>
+                                            <div class="products-card__chart">
+                                                <svg class="products-card__chart-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="products-card__btn-wrap">
+                                            <div class="products-card__cart-btn btn btn--primary">
+                                                <svg class="products-card__cart-icon btn__icon">
+                                                    <use href="img/sprite.svg#cart-icon"></use>
+                                                </svg>
+                                                <span class="products-card__btn-text">В корзину</span>
+                                            </div>
+                                            <div class="products-card__chart-mobile btn btn--primary">
+                                                <svg class="products-card__chart-mobile-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="products-card__like-btn">
+                                        <svg class="products-card__like-btn-icon">
+                                            <use  href="img/sprite.svg#heart-icon"></use>
+                                        </svg>
+                                    </button>
+                                </article>
+                            </div>
+                            <div class="catalog__item">
+                                <article class="products-card">
+                                    <a href="#" class="products-card__main">
+                                        <div class="products-card__img product-mark product-mark--sell">
+                                            <img src="img/products/Echo-HCR-165ES.png" alt="Бензоножницы Echo HCR-165ES">
+                                        </div>
+                                        <div class="products-card__about">
+                                            <div class="products-card__about-model">Echo HCR-165ES</div>
+                                            <div class="products-card__about-name">Бензоножницы</div>
+                                        </div>
+                                    </a>
+                                    <div class="products-card__bottom">
+                                        <div class="products-card__wrap-price">
+                                            <div class="products-card__price-nums price-nums">
+                                                <span class="products-card__price price price--current">40 700</span>
+                                                <span class="products-card__price price price--old">44 700</span>
+                                            </div>
+                                            <div class="products-card__chart">
+                                                <svg class="products-card__chart-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="products-card__btn-wrap">
+                                            <div class="products-card__cart-btn btn btn--primary">
+                                                <svg class="products-card__cart-icon btn__icon">
+                                                    <use href="img/sprite.svg#cart-icon"></use>
+                                                </svg>
+                                                <span class="products-card__btn-text">В корзину</span>
+                                            </div>
+                                            <div class="products-card__chart-mobile btn btn--primary">
+                                                <svg class="products-card__chart-mobile-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="products-card__like-btn">
+                                        <svg class="products-card__like-btn-icon">
+                                            <use  href="img/sprite.svg#heart-icon"></use>
+                                        </svg>
+                                    </button>
+                                </article>
+                            </div>
+                            <div class="catalog__item">
+                                <article class="products-card">
+                                    <a href="#" class="products-card__main">
+                                        <div class="products-card__img product-mark product-mark--sell">
+                                            <img src="img/products/DIAM-Master-Line.png" alt="Алмазный диск (круг) DIAM Master Line">
+                                        </div>
+                                        <div class="products-card__about">
+                                            <div class="products-card__about-model">DIAM Master Line</div>
+                                            <div class="products-card__about-name">Алмазный диск (круг)</div>
+                                        </div>
+                                    </a>
+                                    <div class="products-card__bottom">
+                                        <div class="products-card__wrap-price">
+                                            <div class="products-card__price-nums price-nums">
+                                                <span class="products-card__price price price--current">1 280</span>
+                                                <span class="products-card__price price price--old">1 680</span>
+                                            </div>
+                                            <div class="products-card__chart">
+                                                <svg class="products-card__chart-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="products-card__btn-wrap">
+                                            <div class="products-card__cart-btn btn btn--primary">
+                                                <svg class="products-card__cart-icon btn__icon">
+                                                    <use href="img/sprite.svg#cart-icon"></use>
+                                                </svg>
+                                                <span class="products-card__btn-text">В корзину</span>
+                                            </div>
+                                            <div class="products-card__chart-mobile btn btn--primary">
+                                                <svg class="products-card__chart-mobile-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="products-card__like-btn">
+                                        <svg class="products-card__like-btn-icon">
+                                            <use  href="img/sprite.svg#heart-icon"></use>
+                                        </svg>
+                                    </button>
+                                </article>
+                            </div>
+                            <div class="catalog__item">
+                                <article class="products-card">
+                                    <a href="#" class="products-card__main">
+                                        <div class="products-card__img product-mark product-mark--new">
+                                            <img src="img/products/Nuova-Battipav-SUPREME.png" alt="Станок камнерезный Nuova Battipav SUPREME">
+                                        </div>
+                                        <div class="products-card__about">
+                                            <div class="products-card__about-model">Nuova Battipav SUPREME</div>
+                                            <div class="products-card__about-name">Станок камнерезный</div>
+                                        </div>
+                                    </a>
+                                    <div class="products-card__bottom">
+                                        <div class="products-card__wrap-price">
+                                            <div class="products-card__price-nums price-nums">
+                                                <span class="products-card__price price price--current">265 590</span>
+                                            </div>
+                                            <div class="products-card__chart">
+                                                <svg class="products-card__chart-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="products-card__btn-wrap">
+                                            <div class="products-card__cart-btn btn btn--primary">
+                                                <svg class="products-card__cart-icon btn__icon">
+                                                    <use href="img/sprite.svg#cart-icon"></use>
+                                                </svg>
+                                                <span class="products-card__btn-text">В корзину</span>
+                                            </div>
+                                            <div class="products-card__chart-mobile btn btn--primary">
+                                                <svg class="products-card__chart-mobile-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="products-card__like-btn">
+                                        <svg class="products-card__like-btn-icon">
+                                            <use  href="img/sprite.svg#heart-icon"></use>
+                                        </svg>
+                                    </button>
+                                </article>
+                            </div>
+                            <div class="catalog__item">
+                                <article class="products-card">
+                                    <a href="#" class="products-card__main">
+                                        <div class="products-card__img product-mark product-mark--new">
+                                            <img src="img/products/Ресанта-ФМ-1300Э.png" alt="Фрезерная машина Ресанта ФМ-1300Э">
+                                        </div>
+                                        <div class="products-card__about">
+                                            <div class="products-card__about-model">Ресанта ФМ-1300Э</div>
+                                            <div class="products-card__about-name">Фрезерная машина</div>
+                                        </div>
+                                    </a>
+                                    <div class="products-card__bottom">
+                                        <div class="products-card__wrap-price">
+                                            <div class="products-card__price-nums price-nums">
+                                                <span class="products-card__price price price--current">3 849</span>
+                                            </div>
+                                            <div class="products-card__chart">
+                                                <svg class="products-card__chart-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="products-card__btn-wrap">
+                                            <div class="products-card__cart-btn btn btn--primary">
+                                                <svg class="products-card__cart-icon btn__icon">
+                                                    <use href="img/sprite.svg#cart-icon"></use>
+                                                </svg>
+                                                <span class="products-card__btn-text">В корзину</span>
+                                            </div>
+                                            <div class="products-card__chart-mobile btn btn--primary">
+                                                <svg class="products-card__chart-mobile-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="products-card__like-btn">
+                                        <svg class="products-card__like-btn-icon">
+                                            <use  href="img/sprite.svg#heart-icon"></use>
+                                        </svg>
+                                    </button>
+                                </article>
+                            </div>
+                            <div class="catalog__item">
+                                <article class="products-card">
+                                    <a href="#" class="products-card__main">
+                                        <div class="products-card__img product-mark product-mark--new">
+                                            <img src="img/products/РЕСАНТА-ТЭПК-3000K.png" alt="Электрическая пушка РЕСАНТА ТЭПК-3000K">
+                                        </div>
+                                        <div class="products-card__about">
+                                            <div class="products-card__about-model">РЕСАНТА ТЭПК-3000K</div>
+                                            <div class="products-card__about-name">Электрическая пушка</div>
+                                        </div>
+                                    </a>
+                                    <div class="products-card__bottom">
+                                        <div class="products-card__wrap-price">
+                                            <div class="products-card__price-nums price-nums">
+                                                <span class="products-card__price price price--current">3 007</span>
+                                            </div>
+                                            <div class="products-card__chart">
+                                                <svg class="products-card__chart-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="products-card__btn-wrap">
+                                            <div class="products-card__cart-btn btn btn--primary">
+                                                <svg class="products-card__cart-icon btn__icon">
+                                                    <use href="img/sprite.svg#cart-icon"></use>
+                                                </svg>
+                                                <span class="products-card__btn-text">В корзину</span>
+                                            </div>
+                                            <div class="products-card__chart-mobile btn btn--primary">
+                                                <svg class="products-card__chart-mobile-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="products-card__like-btn">
+                                        <svg class="products-card__like-btn-icon">
+                                            <use  href="img/sprite.svg#heart-icon"></use>
+                                        </svg>
+                                    </button>
+                                </article>
+                            </div>
+                            <div class="catalog__item">
+                                <article class="products-card">
+                                    <a href="#" class="products-card__main">
+                                        <div class="products-card__img product-mark product-mark--sell">
+                                            <img src="img/products/DIAM-JRK-500.png" alt="Резчик швов DIAM JRK-500/13.0L 630058">
+                                        </div>
+                                        <div class="products-card__about">
+                                            <div class="products-card__about-model">DIAM JRK-500/13.0L 630058</div>
+                                            <div class="products-card__about-name">Резчик швов</div>
+                                        </div>
+                                    </a>
+                                    <div class="products-card__bottom">
+                                        <div class="products-card__wrap-price">
+                                            <div class="products-card__price-nums price-nums">
+                                                <span class="products-card__price price price--current">85 200</span>
+                                                <span class="products-card__price price price--old">93 200</span>
+                                            </div>
+                                            <div class="products-card__chart">
+                                                <svg class="products-card__chart-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="products-card__btn-wrap">
+                                            <div class="products-card__cart-btn btn btn--primary">
+                                                <svg class="products-card__cart-icon btn__icon">
+                                                    <use href="img/sprite.svg#cart-icon"></use>
+                                                </svg>
+                                                <span class="products-card__btn-text">В корзину</span>
+                                            </div>
+                                            <div class="products-card__chart-mobile btn btn--primary">
+                                                <svg class="products-card__chart-mobile-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="products-card__like-btn">
+                                        <svg class="products-card__like-btn-icon">
+                                            <use  href="img/sprite.svg#heart-icon"></use>
+                                        </svg>
+                                    </button>
+                                </article>
+                            </div>
+                            <div class="catalog__item">
+                                <article class="products-card">
+                                    <a href="#" class="products-card__main">
+                                        <div class="products-card__img">
+                                            <img src="img/products/Resanta-550-2.png" alt="Сетевой шуруповерт Ресанта СШ-550-2">
+                                        </div>
+                                        <div class="products-card__about">
+                                            <div class="products-card__about-model">Ресанта СШ-550-2</div>
+                                            <div class="products-card__about-name">Сетевой шуруповерт</div>
+                                        </div>
+                                    </a>
+                                    <div class="products-card__bottom">
+                                        <div class="products-card__wrap-price">
+                                            <div class="products-card__price-nums price-nums">
+                                                <span class="products-card__price price price--current">2 362</span>
+                                            </div>
+                                            <div class="products-card__chart">
+                                                <svg class="products-card__chart-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                        <div class="products-card__btn-wrap">
+                                            <div class="products-card__cart-btn btn btn--primary">
+                                                <svg class="products-card__cart-icon btn__icon">
+                                                    <use href="img/sprite.svg#cart-icon"></use>
+                                                </svg>
+                                                <span class="products-card__btn-text">В корзину</span>
+                                            </div>
+                                            <div class="products-card__chart-mobile btn btn--primary">
+                                                <svg class="products-card__chart-mobile-icon">
+                                                    <use href="img/sprite.svg#chart-icon"></use>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="products-card__like-btn">
+                                        <svg class="products-card__like-btn-icon">
+                                            <use  href="img/sprite.svg#heart-icon"></use>
+                                        </svg>
+                                    </button>
+                                </article>
+                            </div>
+                        </div>
+                        <div class="catalog__pagination-wrap">
+                            <div class="catalog__pagination pagination">
+                                <button class="btn-arrow btn-arrow--prev"></button>
+                                <ul class="pagination__list">
+                                    <li class="pagination__item">
+                                        <a href="1" class="pagination__link pagination__link--active">1</a>
+                                    </li>
+                                    <li class="pagination__item">
+                                        <a href="1" class="pagination__link">2</a>
+                                    </li>
+                                    <li class="pagination__item">...</li>
+                                    <li class="pagination__item">
+                                        <a href="1" class="pagination__link">12</a>
+                                    </li>
+                                </ul>
+                                <button class="btn-arrow btn-arrow--next"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    @@include("_footer.html")
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/columnizer/jquery.autocolumnlist.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/selectric/jquery.selectric.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,2271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="libs/slick/slick.css">
+    <link rel="stylesheet" href="libs/light-gallery/css/lightgallery-bundle.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body class="page">
+    <header class="header header--static">
+    <div class="header__top header-top">
+        <div class="container">
+            <div class="header__top-inner">
+                <ul class="header__top-list">
+                    <li class="header__top-item">
+                        <a href="#" class="header__top-link">Доставка и оплата</a>
+                    </li>
+                    <li class="header__top-item">
+                        <a href="#" class="header__top-link">Контакты</a>
+                    </li>
+                </ul>
+                <div class="header__slogan">
+                    <span class="header__slogan-text light-text">Построй и обустрой</span>
+                    <span class="header__slogan-text header__slogan-text--decor">Всё для дома, дачи и стройки!</span>
+                </div>
+                <div class="header__top-control header-control">
+                    <a href="#" class="header-control__link">
+                        <svg class="header-control__icon">
+                            <use href="img/sprite.svg#chart-icon"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header-control__link">
+                        <svg class="header-control__icon">
+                            <use href="img/sprite.svg#heart-icon"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header-control__link">
+                        <svg class="header-control__icon">
+                            <use href="img/sprite.svg#cart-icon"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="header__main-wrap container">
+        <div class="header__main header-main">
+            <a class="header__logo logo" href="index.html">
+                <img class="header__logo-img logo__img" src="img/logo.svg" alt="logo">
+            </a>
+            <a href="tel:380971993832" class="header__number">+38 097 199 3832</a>
+            <div class="header__contact">
+                <a href="tel:380971993832" class="header__contact-link">
+                    <svg class="header__contact-icon">
+                        <use href="img/sprite.svg#phone-icon"></use>
+                    </svg>
+                    <span class="header__contact-text">+38 097 199 3832</span>
+                </a>
+                <a href="mailto:5kvt@gmail.com" class="header__contact-link">
+                    <svg class="header__contact-icon">
+                        <use href="img/sprite.svg#email-icon"></use>
+                    </svg>
+                    <span class="header__contact-text">5kvt@gmail.com</span>
+                </a>
+            </div>
+            <div class="header__search">
+                <form>
+                    <input class="header__search-area" type="text" placeholder="Что ищем?..">
+                    <div class="header__search-submit-wrap">
+                        <input class="header__search-submit" type="submit" value="Поиск">
+                        <svg class="header__search-icon">
+                            <use href="img/sprite.svg#search-icon"></use>
+                        </svg>
+                    </div>
+                </form>
+            </div>
+            <div class="header__social social">
+                <a href="#" class="header__social-link social__link icon-scale-anim">
+                    <svg class="header__social-icon social__icon">
+                        <use href="img/sprite.svg#instagram-icon"></use>
+                    </svg>
+                </a>
+                <a href="#" class="header__social-link social__link icon-scale-anim">
+                    <svg class="header__social-icon social__icon">
+                        <use href="img/sprite.svg#facebook-icon"></use>
+                    </svg>
+                </a>
+                <a href="#" class="header__social-link social__link icon-scale-anim">
+                    <svg class="header__social-icon social__icon social__icon--youtube">
+                        <use href="img/sprite.svg#youtube-icon"></use>
+                    </svg>
+                </a>
+            </div>
+            <a href="#" class="header__adress-btn">Адреса магазинов</a>
+            <div class="header__main-control-wrap">
+                
+                <div class="header-control header__main-control">
+                    <a href="#" class="header-control__link header__main-control-link">
+                        <svg class="header-control__icon">
+                            <use href="img/sprite.svg#chart-icon"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header-control__link header__main-control-link">
+                        <svg class="header-control__icon">
+                            <use href="img/sprite.svg#heart-icon"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header-control__link header__main-control-link">
+                        <svg class="header-control__icon">
+                            <use href="img/sprite.svg#cart-icon"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="header-control__link header__main-control-link">
+                        <svg class="header-control__icon">
+                            <use href="img/sprite.svg#profile-icon"></use>
+                        </svg>
+                    </a>
+                    <div class="header-control__link header__main-control-menu header-control__link--color header__main-control-link" data-popup-open="header-navbar-dropdown" data-popup-remove-all>
+                        <svg class="header-control__icon">
+                            <use href="img/sprite.svg#menu-icon"></use>
+                        </svg>
+                    </div>
+                </div>
+
+                <a href="#" class="header__profile-btn">
+                    <svg class="header__profile-btn-icon">
+                        <use href="img/sprite.svg#profile-icon"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+        <div class="header__navbar navbar">
+            <div class="header__navbar-menu navbar-menu">
+                <div class="navbar-menu__btn menu-btn" data-popup-open="header-navbar-dropdown" data-popup-remove-all>
+                    <svg class="menu-btn__icon">
+                        <use href="img/sprite.svg#menu-icon"></use>
+                    </svg>
+                    <span class="menu-btn__text">Каталог</span>
+                </div>
+                <div class="header__navbar-dropdown navbar-dropdown modal" id="header-navbar-dropdown">
+                    <div class="navbar-dropdown__inner modal-inner">
+                        <div class="navbar-dropdown__header">
+                            <a href="#" class="navbar-dropdown__logo">
+                                <img class="navbar-dropdown__logo-img" src="img/logo-light.svg" alt="logo">
+                            </a>
+                            <div class="navbar-dropdown__close-btn">
+                                <svg class="navbar-dropdown__close-btn-icon modal-close">
+                                    <use href="img/sprite.svg#close-icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="navbar-dropdown__category  header__dropdown-category">
+                            <ul class="navbar-dropdown__category-list">
+                                <li class="navbar-dropdown__category-item">
+                                    <div class="navbar-dropdown__category-btn" data-submenu="submenu-1">
+                                        <div class="navbar-dropdown__category-btn-inner">
+                                            <div class="navbar-dropdown__category-link">Инструмент</div>
+                                            <div class="navbar-dropdown__category-arrow"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="navbar-dropdown__category-item">
+                                    <div class="navbar-dropdown__category-btn">
+                                        <div class="navbar-dropdown__category-btn-inner">
+                                            <a href="#" class="navbar-dropdown__category-link">Ручной инструмент</a>
+                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="navbar-dropdown__category-item">
+                                    <div class="navbar-dropdown__category-btn">
+                                        <div class="navbar-dropdown__category-btn-inner">
+                                            <a href="#" class="navbar-dropdown__category-link">Всё для сада</a>
+                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="navbar-dropdown__category-item">
+                                    <div class="navbar-dropdown__category-btn">
+                                        <div class="navbar-dropdown__category-btn-inner">
+                                            <a href="#" class="navbar-dropdown__category-link">Электрика и свет</a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="navbar-dropdown__category-item">
+                                    <div class="navbar-dropdown__category-btn">
+                                        <div class="navbar-dropdown__category-btn-inner">
+                                            <a href="#" class="navbar-dropdown__category-link">Автотовары</a>
+                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="navbar-dropdown__category-item">
+                                    <div class="navbar-dropdown__category-btn">
+                                        <div class="navbar-dropdown__category-btn-inner">
+                                            <a href="#" class="navbar-dropdown__category-link">Прочее оборудование и устройства</a>
+                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="navbar-dropdown__category-item">
+                                    <div class="navbar-dropdown__category-btn" data-submenu="submenu-2">
+                                        <div class="navbar-dropdown__category-btn-inner">
+                                            <div class="navbar-dropdown__category-link">Сантехника и инженерные системы</div>
+                                            <div class="navbar-dropdown__category-arrow"></div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="navbar-dropdown__category-item">
+                                    <div class="navbar-dropdown__category-btn">
+                                        <div class="navbar-dropdown__category-btn-inner">
+                                            <a href="#" class="navbar-dropdown__category-link">Климат и отопление</a>
+                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="navbar-dropdown__category-item">
+                                    <div class="navbar-dropdown__category-btn">
+                                        <div class="navbar-dropdown__category-btn-inner">
+                                            <a href="#" class="navbar-dropdown__category-link">Крепёж</a>
+                                            
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="navbar-dropdown__category-item">
+                                    <div class="navbar-dropdown__category-btn">
+                                        <div class="navbar-dropdown__category-btn-inner">
+                                            <a href="#" class="navbar-dropdown__category-link">Станки и промкомпоненты</a>
+                                            
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="navbar-dropdown__subcategory-list">
+                            <div id="submenu-1" class="navbar-dropdown__subcategory subcategory">
+                                <div class="subcategory__inner">
+                                <ul class="subcategory__list">
+                                    <li class="subcategory__back-btn">Назад</li>
+                                    <li class="subcategory__item menu-dropdown">
+                                        <div class="subcategory__btn">
+                                            <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Аккумуляторный инструмент</span>
+                                                <span class="category-num">4700</span>
+                                            </a>
+                                        </div>
+                                        <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                            <ul class="subsubcategory__list">
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">USB адаптеры</span>
+                                                        <span class="category-num">14</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Аккумуляторные дрели-шуруповерты </span>
+                                                        <span class="category-num">3500</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Аккумуляторные реноваторы</span>
+                                                        <span class="category-num">137</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Аккумуляторные строительные миксеры</span>
+                                                        <span class="category-num">15</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Аккумуляторные трещотки</span>
+                                                        <span class="category-num">23</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Аккумуляторный садовый инструмент</span>
+                                                        <span class="category-num">1465</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Аккумуляторы для инструмента</span>
+                                                        <span class="category-num">2098</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item">
+                                        <div class="subcategory__btn">
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Болгарки</span>
+                                                <span class="category-num">123</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item">
+                                        <div class="subcategory__btn">
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Бороздоделы (штроборезы)</span>
+                                                <span class="category-num">123</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item menu-dropdown">
+                                        <div class="subcategory__btn">
+                                            <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Гайковерты</span>
+                                                <span class="category-num">512</span>
+                                            </a>
+                                        </div>
+                                        <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                            <ul class="subsubcategory__list">
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Аккумуляторные гайковерты</span>
+                                                        <span class="category-num">359</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Бензиновые</span>
+                                                        <span class="category-num">5</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Гидравлические гайковерты</span>
+                                                        <span class="category-num">4</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Мультипликаторы усилия</span>
+                                                        <span class="category-num">64</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Пневмогайковерты</span>
+                                                        <span class="category-num">1080</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Ручные гайковерты</span>
+                                                        <span class="category-num">104</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Электрические гайковерты</span>
+                                                        <span class="category-num">80</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item menu-dropdown">
+                                        <div class="subcategory__btn">
+                                            <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Гвоздезабиватели (степлеры)</span>
+                                                <span class="category-num">123</span>
+                                            </a>
+                                        </div>
+                                        <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                            <ul class="subsubcategory__list">
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Пистолеты газовые</span>
+                                                        <span class="category-num">35</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Пневмостеплеры</span>
+                                                        <span class="category-num">318</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Степлеры и гвоздезабиватели</span>
+                                                        <span class="category-num">74</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Степлеры механические</span>
+                                                        <span class="category-num">455</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Электрические</span>
+                                                        <span class="category-num">45</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item menu-dropdown">
+                                        <div class="subcategory__btn">
+                                            <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Генераторы (электростанции)</span>
+                                                <span class="category-num">3626</span>
+                                            </a>
+                                        </div>
+                                        <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                            <ul class="subsubcategory__list">
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text"> Бензогенераторы</span>
+                                                        <span class="category-num">1523</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Газовые генераторы</span>
+                                                        <span class="category-num">129</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Дизель генераторы</span>
+                                                        <span class="category-num">1126</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Инверторные генераторы</span>
+                                                        <span class="category-num">273</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Сварочные генераторы</span>
+                                                        <span class="category-num">243</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item menu-dropdown">
+                                        <div class="subcategory__btn">
+                                            <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Граверы</span>
+                                                <span class="category-num">364</span>
+                                            </a>
+                                        </div>
+                                        <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                            <ul class="subsubcategory__list">
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Аккумуляторные граверы</span>
+                                                        <span class="category-num">63</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Прямошлифовальные машины</span>
+                                                        <span class="category-num">86</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Сетевые</span>
+                                                        <span class="category-num">215</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item menu-dropdown">
+                                        <div class="subcategory__btn">
+                                            <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Дрели</span>
+                                                <span class="category-num">1440</span>
+                                            </a>
+                                        </div>
+                                        <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                            <ul class="subsubcategory__list">
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Аккумуляторные дрели-шуруповерты</span>
+                                                        <span class="category-num">3513</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Безударные</span>
+                                                        <span class="category-num">293</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Дрели-миксеры</span>
+                                                        <span class="category-num">282</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Пневмодрели</span>
+                                                        <span class="category-num">269</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Угловые дрели</span>
+                                                        <span class="category-num">10</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text"> Ударные</span>
+                                                        <span class="category-num">855</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Установки алмазного бурения</span>
+                                                        <span class="category-num">265</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Шуруповерты сетевые</span>
+                                                        <span class="category-num">303</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item menu-dropdown">
+                                        <div class="subcategory__btn">
+                                            <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Заклепочники</span>
+                                                <span class="category-num">13</span>
+                                            </a>
+                                        </div>
+                                        <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                            <ul class="subsubcategory__list">
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Аккумуляторные</span>
+                                                        <span class="category-num">43</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Пневматические заклепочники</span>
+                                                        <span class="category-num">116</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Ручные заклепочники</span>
+                                                        <span class="category-num">511</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Электрические</span>
+                                                        <span class="category-num">13</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item menu-dropdown">
+                                        <div class="subcategory__btn">
+                                            <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Измерительный инструмент</span>
+                                                <span class="category-num">7467</span>
+                                            </a>
+                                        </div>
+                                        <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                            <ul class="subsubcategory__list">
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Контроль электроэнергии и сетей</span>
+                                                        <span class="category-num">2382</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Геодезическое оборудование</span>
+                                                        <span class="category-num">2240</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Пирометры</span>
+                                                        <span class="category-num">280</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Измерители температуры</span>
+                                                        <span class="category-num">1139</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Лазерные дальномеры (рулетки)</span>
+                                                        <span class="category-num">469</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item menu-dropdown">
+                                        <div class="subcategory__btn">
+                                            <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Инструмент и оборудование по видам работ</span>
+                                                <span class="category-num">83645</span>
+                                            </a>
+                                        </div>
+                                        <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                            <ul class="subsubcategory__list">
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Инструмент для работ с картоном и бумагой</span>
+                                                        <span class="category-num">342</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Инструмент и оборудование для земляных работ</span>
+                                                        <span class="category-num">554</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Инструмент и оборудование для работ по бетону</span>
+                                                        <span class="category-num">32</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Инструмент и оборудование для работ по дереву</span>
+                                                        <span class="category-num">1323</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Инструмент и оборудование для работ по керамике</span>
+                                                        <span class="category-num">3444</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Инструмент и оборудование для работ по кирпичу</span>
+                                                        <span class="category-num">954</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Инструмент и оборудование для работ по металлу</span>
+                                                        <span class="category-num">45</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Инструмент и оборудование для работ по пластику</span>
+                                                        <span class="category-num">843</span>
+                                                    </a>
+                                                </li>
+
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Инструмент и оборудование для работ по стеклу</span>
+                                                        <span class="category-num">4567</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item menu-dropdown">
+                                        <div class="subcategory__btn">
+                                            <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Инструментальные наборы</span>
+                                                <span class="category-num">400</span>
+                                            </a>
+                                        </div>
+                                        <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                            <ul class="subsubcategory__list">
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Наборы аккумуляторного инструмента</span>
+                                                        <span class="category-num">123</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Наборы пневмоинструмента</span>
+                                                        <span class="category-num">123</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Наборы ручных инструментов</span>
+                                                        <span class="category-num">123</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Наборы электроинструмента</span>
+                                                        <span class="category-num">123</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item menu-dropdown">
+                                        <div class="subcategory__btn">
+                                            <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Ножницы по металлу</span>
+                                                <span class="category-num">1408</span>
+                                            </a>
+                                        </div>
+                                        <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                            <ul class="subsubcategory__list">
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Аккумуляторные ножницы</span>
+                                                        <span class="category-num">56</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Ножницы арматурные</span>
+                                                        <span class="category-num">19</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Ножницы вырубные (высечные)</span>
+                                                        <span class="category-num">37</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Ножницы листовые (вырезные)</span>
+                                                        <span class="category-num">24</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Ножницы ручные</span>
+                                                        <span class="category-num">866</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Ножницы рычажные</span>
+                                                        <span class="category-num">58</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Ножницы шлицевые</span>
+                                                        <span class="category-num">9</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item menu-dropdown">
+                                        <div class="subcategory__btn">
+                                            <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Пилы</span>
+                                                <span class="category-num">2458</span>
+                                            </a>
+                                        </div>
+                                        <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                            <ul class="subsubcategory__list">
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Бензопилы</span>
+                                                        <span class="category-num">547</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Комбинированные торцовочные пилы</span>
+                                                        <span class="category-num">564</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Монтажные (отрезные) пилы</span>
+                                                        <span class="category-num">346</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Радиально-консольные пилы</span>
+                                                        <span class="category-num">34</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Ручные ленточные пилы</span>
+                                                        <span class="category-num">676</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item">
+                                        <div class="subcategory__btn">
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Клуппы электрические</span>
+                                                <span class="category-num">123</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item menu-dropdown">
+                                        <div class="subcategory__btn">
+                                            <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Компрессоры</span>
+                                                <span class="category-num">277</span>
+                                            </a>
+                                        </div>
+                                        <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                            <ul class="subsubcategory__list">
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Автомобильные</span>
+                                                        <span class="category-num">596</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Бензиновые</span>
+                                                        <span class="category-num">19</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item menu-dropdown">
+                                        <div class="subcategory__btn">
+                                            <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Краскопульты</span>
+                                                <span class="category-num">1262</span>
+                                            </a>
+                                        </div>
+                                        <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                            <ul class="subsubcategory__list">
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Аккумуляторные</span>
+                                                        <span class="category-num">16</span>
+                                                    </a>
+                                                </li>
+                                                <li class="subsubcategory__item">
+                                                    <a href="#" class="subsubcategory__link">
+                                                        <span class="subsubcategory__text">Механические</span>
+                                                        <span class="category-num">9</span>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="subcategory__item">
+                                        <div class="subcategory__btn">
+                                            <a href="#" class="subcategory__btn-link">
+                                                <span class="subcategory__btn-name">Лобзики</span>
+                                                <span class="category-num">123</span>
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
+                                </div>
+                            </div>
+                            <div id="submenu-2" class="navbar-dropdown__subcategory subcategory">
+                                <div class="subcategory__inner">
+                                    <ul class="subcategory__list">
+                                        <li class="subcategory__back-btn">Назад</li>
+                                        <li class="subcategory__item menu-dropdown">
+                                            <div class="subcategory__btn">
+                                                <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Аксессуары</span>
+                                                    <span class="category-num">1127</span>
+                                                </a>
+                                            </div>
+                                            <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                                <ul class="subsubcategory__list">
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Вентиляторы и кулеры для компьютера</span>
+                                                            <span class="category-num">7</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Для домофонов</span>
+                                                            <span class="category-num">74</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Для ИБП</span>
+                                                            <span class="category-num">26</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Для кабелей и проводов</span>
+                                                            <span class="category-num">874</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Для кабеленесущих систем</span>
+                                                            <span class="category-num">9123</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Для освещения</span>
+                                                            <span class="category-num">7607</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Для розеток и выключателей</span>
+                                                            <span class="category-num">9123</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="subcategory__item">
+                                            <div class="subcategory__btn">
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Источники бесперебойного питания</span>
+                                                    <span class="category-num">123</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="subcategory__item menu-dropdown">
+                                            <div class="subcategory__btn">
+                                                <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Кабеленесущие системы</span>
+                                                    <span class="category-num">3259</span>
+                                                </a>
+                                            </div>
+                                            <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                                <ul class="subsubcategory__list">
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Кабель-каналы</span>
+                                                            <span class="category-num">920</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Кабельные колодцы</span>
+                                                            <span class="category-num">39</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Кабельные лотки</span>
+                                                            <span class="category-num">12232</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Кабельные органайзеры</span>
+                                                            <span class="category-num">263</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Кабельные рукава</span>
+                                                            <span class="category-num">2093</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Колонны и мини-колонны</span>
+                                                            <span class="category-num">1234</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Комплектующие и аксессуары</span>
+                                                            <span class="category-num">65</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Металлорукава</span>
+                                                            <span class="category-num">435</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Монтажные коробки</span>
+                                                            <span class="category-num">12</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="subcategory__item menu-dropdown">
+                                            <div class="subcategory__btn">
+                                                <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Кабель и провод</span>
+                                                    <span class="category-num">335</span>
+                                                </a>
+                                            </div>
+                                            <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                                <ul class="subsubcategory__list">
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Автомобильный</span>
+                                                            <span class="category-num">67</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Для электропроводки</span>
+                                                            <span class="category-num">20</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Оптоволоконный</span>
+                                                            <span class="category-num">986</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Сигнальный и передачи данных</span>
+                                                            <span class="category-num">14</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Обмоточный провод (эмальпровод)</span>
+                                                            <span class="category-num">1069</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="subcategory__item menu-dropdown">
+                                            <div class="subcategory__btn">
+                                                <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Коммутационное оборудование</span>
+                                                    <span class="category-num">93</span>
+                                                </a>
+                                            </div>
+                                            <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                                <ul class="subsubcategory__list">
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Автоматический ввод резерва</span>
+                                                            <span class="category-num">1243</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Концевые выключатели</span>
+                                                            <span class="category-num">12</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Контакторы</span>
+                                                            <span class="category-num">3443</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Переключатели</span>
+                                                            <span class="category-num">4554</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Светосигнальная и управляющая арматура</span>
+                                                            <span class="category-num">34</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Силовые модули</span>
+                                                            <span class="category-num">123</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="subcategory__item menu-dropdown">
+                                            <div class="subcategory__btn">
+                                                <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Комплектующие для ПК</span>
+                                                    <span class="category-num">4255</span>
+                                                </a>
+                                            </div>
+                                            <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                                <ul class="subsubcategory__list">
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Вентиляторы и кулеры для компьютера</span>
+                                                            <span class="category-num">7</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Для компьютеров</span>
+                                                            <span class="category-num">52</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="subcategory__item">
+                                            <div class="subcategory__btn">
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Компоненты СКС</span>
+                                                    <span class="category-num">123</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="subcategory__item">
+                                            <div class="subcategory__btn">
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Лампочки</span>
+                                                    <span class="category-num">437</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="subcategory__item menu-dropdown">
+                                            <div class="subcategory__btn">
+                                                <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Освещение</span>
+                                                    <span class="category-num">3816</span>
+                                                </a>
+                                            </div>
+                                            <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                                <ul class="subsubcategory__list">
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Гирлянды</span>
+                                                            <span class="category-num">3969</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Лампочки</span>
+                                                            <span class="category-num">12993</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Светильники</span>
+                                                            <span class="category-num">93001</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Светодиодное освещение</span>
+                                                            <span class="category-num">8198</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Фонари</span>
+                                                            <span class="category-num">4019</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="subcategory__item menu-dropdown">
+                                            <div class="subcategory__btn">
+                                                <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Паяльное оборудование</span>
+                                                    <span class="category-num">473</span>
+                                                </a>
+                                            </div>
+                                            <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                                <ul class="subsubcategory__list">
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Аппараты для сварки пластиковых труб</span>
+                                                            <span class="category-num">80</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Вакуумные пинцеты и манипуляторы</span>
+                                                            <span class="category-num">29</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Газовые паяльники</span>
+                                                            <span class="category-num">619</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Паяльные фены</span>
+                                                            <span class="category-num">612</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Термопинцеты</span>
+                                                            <span class="category-num">15</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Паяльные ванны</span>
+                                                            <span class="category-num">335</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Дымоуловители</span>
+                                                            <span class="category-num">15</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="subcategory__item">
+                                            <div class="subcategory__btn">
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Преобразователи напряжения (конвертеры)</span>
+                                                    <span class="category-num">123</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="subcategory__item menu-dropdown">
+                                            <div class="subcategory__btn">
+                                                <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Розетки и выключатели</span>
+                                                    <span class="category-num">5626</span>
+                                                </a>
+                                            </div>
+                                            <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                                <ul class="subsubcategory__list">
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Аксессуары</span>
+                                                            <span class="category-num">697</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">697</span>
+                                                            <span class="category-num">123</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Датчики для освещения</span>
+                                                            <span class="category-num">1408</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Диммеры</span>
+                                                            <span class="category-num">8612</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Комбинированные устройства</span>
+                                                            <span class="category-num">1408</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="subcategory__item">
+                                            <div class="subcategory__btn">
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Светильники</span>
+                                                    <span class="category-num">123</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="subcategory__item menu-dropdown">
+                                            <div class="subcategory__btn">
+                                                <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Светодиодное освещение</span>
+                                                    <span class="category-num">3455</span>
+                                                </a>
+                                            </div>
+                                            <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                                <ul class="subsubcategory__list">
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Светодиодные</span>
+                                                            <span class="category-num">8412</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Светодиодные ленты</span>
+                                                            <span class="category-num">2996</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Светодиодные линейные светильники</span>
+                                                            <span class="category-num">3402</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Светодиодные прожекторы</span>
+                                                            <span class="category-num">2996</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Филаментные лампы</span>
+                                                            <span class="category-num">1962</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="subcategory__item menu-dropdown">
+                                            <div class="subcategory__btn">
+                                                <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Системы безопасности</span>
+                                                    <span class="category-num">5413</span>
+                                                </a>
+                                            </div>
+                                            <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                                <ul class="subsubcategory__list">
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Видеоглазки</span>
+                                                            <span class="category-num">14</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Домофоны</span>
+                                                            <span class="category-num">901</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Охранные системы</span>
+                                                            <span class="category-num">1408</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Сейфы</span>
+                                                            <span class="category-num">1190</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Системы видеонаблюдения</span>
+                                                            <span class="category-num">2877</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Системы пожарно-охранной сигнализации</span>
+                                                            <span class="category-num">156</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Умный дом</span>
+                                                            <span class="category-num">767</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                        <li class="subcategory__item">
+                                            <div class="subcategory__btn">
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Стабилизаторы напряжения</span>
+                                                    <span class="category-num">123</span>
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="subcategory__item menu-dropdown">
+                                            <div class="subcategory__btn">
+                                                <div class="subcategory__btn-open menu-dropdown__btn"></div>
+                                                <a href="#" class="subcategory__btn-link">
+                                                    <span class="subcategory__btn-name">Счетчики и приборы учета</span>
+                                                    <span class="category-num">3966</span>
+                                                </a>
+                                            </div>
+                                            <div class="subcategory__dropdown subsubcategory menu-dropdown__elem">
+                                                <ul class="subsubcategory__list">
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Ваттметры</span>
+                                                            <span class="category-num">343</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Счетчики импульсов-регистраторы</span>
+                                                            <span class="category-num">12</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Счетчики моточасов</span>
+                                                            <span class="category-num">168</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Теплосчетчики</span>
+                                                            <span class="category-num">94</span>
+                                                        </a>
+                                                    </li>
+                                                    <li class="subsubcategory__item">
+                                                        <a href="#" class="subsubcategory__link">
+                                                            <span class="subsubcategory__text">Счетчики газа</span>
+                                                            <span class="category-num">168</span>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="header__navbar-list navbar__list">
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">Инструмент</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">Ручной<br>инструмент</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">Всё для сада</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">Электрика и свет</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">Автотовары</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">Сантехника и<br>инженерные системы</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#" class="navbar__link">Прочее<br>оборудование</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+    <main class="main">
+        <div class="breadcrumbs">
+            <div class="container">
+                <ul class="breadcrumbs__list">
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Главная</a>
+                    </li>
+                    <li class="breadcrumbs__item">
+                        <a href="#" class="breadcrumbs__link">Карточка товара</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="container">
+            <section class="product-main">
+                <div class="product-main__wrap-gallery">
+                    <div class="product-gallery">
+                        <div class="product-gallery__main">
+                            <div class="product-gallery__main-btn product-gallery__main-btn--prev">
+                                <svg class="product-gallery__arrow">
+                                    <use href="img/sprite.svg#arrow-icon"></use>
+                                </svg>
+                            </div>
+                            <div class="product-gallery__main-btn product-gallery__main-btn--next">
+                                <svg class="product-gallery__arrow product-gallery__arrow--next">
+                                    <use href="img/sprite.svg#arrow-icon"></use>
+                                </svg>
+                            </div>
+                            <div class="product-gallery__main-inner product-mark product-mark--sell">
+                                <div class="product-gallery__main-item">
+                                    <a href="img/produts-gallery/product-1/img-1.jpg" class="product-gallery__main-item-inner">
+                                        <img src="img/produts-gallery/product-1/img-1.jpg" alt="Резчик швов" class="product-gallery__img">
+                                    </a>
+                                </div>
+                                <div class="product-gallery__main-item">
+                                    <a href="img/produts-gallery/product-1/img-2.jpg" class="product-gallery__main-item-inner">
+                                        <img src="img/produts-gallery/product-1/img-2.jpg" alt="Резчик швов" class="product-gallery__img">
+                                    </a>
+                                </div>
+                                <div class="product-gallery__main-item">
+                                    <a href="img/produts-gallery/product-1/img-3.jpg" class="product-gallery__main-item-inner">
+                                        <img src="img/produts-gallery/product-1/img-3.jpg" alt="Резчик швов" class="product-gallery__img">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product-gallery__thumbs">
+                            <div class="product-gallery__thumbs-btn product-gallery__thumbs-btn--prev"></div>
+                            <div class="product-gallery__thumbs-inner">
+                                <div class="product-gallery__thumbs-item">
+                                    <div class="product-gallery__thumbs-item-inner">
+                                        <img src="img/produts-gallery/product-1/img-1.jpg" alt="миниатюра 1" class="product-gallery__img">
+                                    </div>
+                                </div>
+                                <div class="product-gallery__thumbs-item">
+                                    <div class="product-gallery__thumbs-item-inner">
+                                        <img src="img/produts-gallery/product-1/img-2.jpg" alt="миниатюра 2" class="product-gallery__img">
+                                    </div>
+                                </div>
+                                <div class="product-gallery__thumbs-item">
+                                    <div class="product-gallery__thumbs-item-inner">
+                                        <img src="img/produts-gallery/product-1/img-3.jpg" alt="миниатюра 3" class="product-gallery__img">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="product-gallery__thumbs-btn product-gallery__thumbs-btn--next"></div>
+                        </div>
+                    </div>
+                    <div class="product-availability product-availability--wrap-gallery product-availability--no-stock">Нет в наличии</div>
+                </div>
+                <div class="product-main__details">
+                    <div class="product-main__info">
+                        <div class="product-main__row product-main__header">
+                            <h1 class="product-main__title">
+                                <span class="product-main__title-name">Резчик швов</span>
+                                <span class="product-main__title-model">DIAM JRK-500/13.0L 630058</span>
+                            </h1>
+                            <div class="product-main__header-like product-main__icon">
+                                <svg class="product-main__header-like-icon product-main__icon-img">
+                                    <use href="img/sprite.svg#heart-icon"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="product-main__row product-main__wrap-rating">
+                            <a href="#" class="product-main__rating">
+              
+
+                                <div class="rating-stars rating-stars--product-main" data-set-value="4">
+                                    <div class="rating-stars__inner">
+                                        <div class="rating-stars__item" data-rating-value="5">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                        <div class="rating-stars__item" data-rating-value="4">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                        <div class="rating-stars__item" data-rating-value="3">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                        <div class="rating-stars__item" data-rating-value="2">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                        <div class="rating-stars__item" data-rating-value="1">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <span class="product-main__reviews-link">
+                                    <span class="product-main__reviews-link-text">Отзывы </span>
+                                    <span class="product-main__reviews-link-num">0</span>
+                                </span>
+                            </a>
+                            <a href="#" class="product-main__icon product-main__rating-share">
+                                <svg class="product-main__rating-share-icon product-main__icon-img ">
+                                    <use href="img/sprite.svg#share-icon"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="product-main__row product-main__data">
+                            <div class="product-main__data-item">
+                                <span class="product-main__data-item-name">Артикул: </span>
+                                <span class="product-main__data-item-number">1129973</span>
+                            </div>
+                            <div class="product-main__data-item">
+                                <span class="product-main__data-item-name">Модель: </span>
+                                <span class="product-main__data-item-number">1129973</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-main__control">
+                        <div class="product-main__row product-main__wrap-price">
+                            <div class="product-main__price-nums">
+                                <span class="product-main__price price price--current">85 200</span>
+                                <span class="product-main__price price price--old">93 200</span>
+                            </div>
+                            <div class="product-main__quantity quantity">
+                                <button class="quantity__btn quantity-btn-minus">
+                                    <svg class="quantity__btn-icon">
+                                        <use href="img/sprite.svg#minus-icon"></use>
+                                    </svg>                                       
+                                </button>
+                                <input type="text" class="quantity__number" value="1" data-max-num="99">
+                                <button class="quantity__btn quantity-btn-plus">
+                                    <svg class="quantity__btn-icon">
+                                        <use href="img/sprite.svg#plus-icon"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="product-main__wrap-btn">
+                            <button class="product-main__btn btn btn--primary">
+                                <svg class="product-main__btn-icon btn__icon">
+                                    <use href="img/sprite.svg#cart-icon"></use>
+                                </svg>
+                                <span class="product-main__btn-text">В корзину</span>
+                            </button>
+                            <button class="product-main__btn-mobile btn btn--primary">
+                                <svg class="product-main__btn-mobile-icon">
+                                    <use href="img/sprite.svg#heart-icon"></use>
+                                </svg>
+                            </button>
+                            <button class="product-main__btn-mobile btn btn--primary">
+                                <svg class="product-main__btn-mobile-icon">
+                                    <use href="img/sprite.svg#share-icon"></use>
+                                </svg>
+                            </button>
+                            <div class="product-availability product-availability--wrap-btn product-availability--no-stock">Нет в наличии</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <div class="product-all-info">
+
+                <div class="product-features product-page-block">
+                    <div class="product-page-block__header">
+                        <h2 class="product-page-block__title">Характеристики</h2>
+                    </div>
+                    <ul class="product-features__list">
+                        <li class="product-features__item">
+                            <span class="product-features__name">Максимальная глубина реза, мм</span>
+                            <span class="product-features__value">175</span>
+                        </li>
+                        <li class="product-features__item">
+                            <span class="product-features__name">Тип двигателя</span>
+                            <span class="product-features__value">Loncin 389cc</span>
+                        </li>
+                        <li class="product-features__item">
+                            <span class="product-features__name">Мощность, кВт (л.с.)</span>
+                            <span class="product-features__value">13,0</span>
+                        </li>
+                        <li class="product-features__item">
+                            <span class="product-features__name">Объем топливного бака, л</span>
+                            <span class="product-features__value">6,5</span>
+                        </li>
+                        <li class="product-features__item">
+                            <span class="product-features__name">Максимальная частота вращения диска, об/мин</span>
+                            <span class="product-features__value">3000</span>
+                        </li>
+                        <li class="product-features__item">
+                            <span class="product-features__name">Максимальный диаметр диска, мм</span>
+                            <span class="product-features__value">500</span>
+                        </li>
+                        <li class="product-features__item">
+                            <span class="product-features__name">Диаметр посадочного отверстия, мм</span>
+                            <span class="product-features__value">25,4</span>
+                        </li>
+                        <li class="product-features__item">
+                            <span class="product-features__name">Габаритные размеры, мм</span>
+                            <span class="product-features__value">1400х650х1000</span>
+                        </li>
+                        <li class="product-features__item">
+                            <span class="product-features__name">Вес, кг</span>
+                            <span class="product-features__value">135</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="product-description product-page-block">
+                    <div class="product-page-block__header">
+                        <h2 class="product-page-block__title">Описание</h2>
+                    </div>
+                    <p class="product-description__text">Резчик швов DIAM JRK-500/13.0L арт. 630058 -предназначен для нарезания швов в асфальте при дорожном строительстве и ремонте дорог, для нарезания температурных швов в бетоне, и проведения других строительных работ. Швонарезчик DIAM JRK-500/13.0L оснащен бензиновым двигателям LONCIN, модель 389cc. Использование алмазных дисков DIAM для сухой резки, позволяет резать материал без подачи воды.</p>
+                </div>
+                <div class="product-reviews product-page-block">
+                    <div class="product-page-block__header product-reviews__header">
+                        <h2 class="product-page-block__title">Отзывы</h2>
+                        <div class="slider-control slider-control--sm">
+                            <button class="slider-control__arrow btn-arrow  btn-arrow--prev product-reviews--prev"></button>
+                            <button class="slider-control__arrow btn-arrow  btn-arrow--next product-reviews--next"></button>
+                        </div>
+                    </div>
+                    <div class="product-reviews__slider">
+                        <div class="product-reviews__item">
+                            <div class="product-reviews__about">
+                                <div class="product-reviews__author">
+                                    <div class="product-reviews__author-img">
+                                        <img src="img/user-icons/1.png" alt="Иван Абрамов">
+                                    </div>
+                                    <span class="product-reviews__author-name">Иван Абрамов</span>
+                                </div>
+                                <div class="rating-stars rating-stars--product-reviews" data-set-value="5">
+                                    <div class="rating-stars__inner">
+                                        <div class="rating-stars__item" data-rating-value="5">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                        <div class="rating-stars__item" data-rating-value="4">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                        <div class="rating-stars__item" data-rating-value="3">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                        <div class="rating-stars__item" data-rating-value="2">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                        <div class="rating-stars__item" data-rating-value="1">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="product-reviews__text">Удобно работать. Двигатель вообще беспроблемный, запускается быстро, обороты и холостые и под нагрузкой держит очень хорошо, плавающего эффекта нет</p>
+                        </div>
+                        <div class="product-reviews__item">
+                            <div class="product-reviews__about">
+                                <div class="product-reviews__author">
+                                    <div class="product-reviews__author-img">
+                                        <img src="img/user-icons/2.jpg" alt="Василий Утка">
+                                    </div>
+                                    <span class="product-reviews__author-name">Василий Воскобойников</span>
+                                </div>
+                                <div class="rating-stars rating-stars--product-reviews" data-set-value="4">
+                                    <div class="rating-stars__inner">
+                                        <div class="rating-stars__item" data-rating-value="5">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                        <div class="rating-stars__item" data-rating-value="4">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                        <div class="rating-stars__item" data-rating-value="3">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                        <div class="rating-stars__item" data-rating-value="2">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                        <div class="rating-stars__item" data-rating-value="1">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="product-reviews__text">Взяли этот новый резчик так как загубили старый. Плавящийся битум может полностью вывести из строя инструмент по причине перегрева двигателя. Резать вязкий битум категорически не советую. Используем уже третий месяц пока что нареканий нет</p>
+                        </div>
+                        <div class="product-reviews__item">
+                            <div class="product-reviews__about">
+                                <div class="product-reviews__author">
+                                    <div class="product-reviews__author-img">
+                                        <img src="img/user-icons/3.jpg" alt="Илья Масков">
+                                    </div>
+                                    <span class="product-reviews__author-name">Илья Масков</span>
+                                </div>
+                                <div class="rating-stars rating-stars--product-reviews" data-set-value="4">
+                                    <div class="rating-stars__inner">
+                                        <div class="rating-stars__item" data-rating-value="5">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                        <div class="rating-stars__item" data-rating-value="4">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                        <div class="rating-stars__item" data-rating-value="3">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                        <div class="rating-stars__item" data-rating-value="2">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                        <div class="rating-stars__item" data-rating-value="1">
+                                            <svg class="rating-stars__item-icon" viewBox="0 0 25 23" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M12.5 0L15.3064 8.63729H24.3882L17.0409 13.9754L19.8473 22.6127L12.5 17.2746L5.15268 22.6127L7.95911 13.9754L0.611794 8.63729H9.69357L12.5 0Z"/>
+                                            </svg> 
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="product-reviews__text">Машинка порадовала, сделано хорошо.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="products products--mobile-slider also-buy">
+            <div class="container products__container">
+                <div class="products__inner">
+                    <div class="section-header section-header--offset">
+                        <h2 class="section-header__title title">С этим товаром покупают</h2>
+                        <div class="products__slider-control slider-control">
+                            <button class="slider-control__arrow btn-arrow  btn-arrow--prev"></button>
+                            <button class="slider-control__arrow btn-arrow  btn-arrow--next"></button>
+                        </div>
+                    </div>
+                    <div class="products__slider also-buy__slider">
+                        <div class="products__slider-item  also-buy__slider-item">
+                            <article class="products-card">
+                                <a href="#" class="products-card__main">
+                                    <div class="products-card__img">
+                                        <img src="img/products/HUTER-ECS-100.png" alt="Станок камнерезный HUTER ECS-100">
+                                    </div>
+                                    <div class="products-card__about">
+                                        <div class="products-card__about-model">HUTER ECS-100</div>
+                                        <div class="products-card__about-name">Станок камнерезный</div>
+                                    </div>
+                                </a>
+                                <div class="products-card__bottom">
+                                    <div class="products-card__wrap-price">
+                                        <div class="products-card__price-nums price-nums">
+                                            <span class="products-card__price price price--current">2 441</span>
+                                        </div>
+                                        <div class="products-card__chart">
+                                            <svg class="products-card__chart-icon">
+                                                <use href="img/sprite.svg#chart-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="products-card__btn-wrap">
+                                        <div class="products-card__cart-btn btn btn--primary">
+                                            <svg class="products-card__cart-icon btn__icon">
+                                                <use href="img/sprite.svg#cart-icon"></use>
+                                            </svg>
+                                            <span class="products-card__btn-text">В корзину</span>
+                                        </div>
+                                        <div class="products-card__chart-mobile btn btn--primary">
+                                            <svg class="products-card__chart-mobile-icon">
+                                                <use href="img/sprite.svg#chart-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="products-card__like-btn">
+                                    <svg class="products-card__like-btn-icon">
+                                        <use href="img/sprite.svg#heart-icon"></use>
+                                    </svg>
+                                </button>
+                            </article>
+                        </div>
+                        <div class="products__slider-item  also-buy__slider-item">
+                            <article class="products-card">
+                                <a href="#" class="products-card__main">
+                                    <div class="products-card__img">
+                                        <img src="img/products/Resanta-550-2.png" alt="Сетевой шуруповерт Ресанта СШ-550-2">
+                                    </div>
+                                    <div class="products-card__about">
+                                        <div class="products-card__about-model">Ресанта СШ-550-2</div>
+                                        <div class="products-card__about-name">Сетевой шуруповерт</div>
+                                    </div>
+                                </a>
+                                <div class="products-card__bottom">
+                                    <div class="products-card__wrap-price">
+                                        <div class="products-card__price-nums price-nums">
+                                            <span class="products-card__price price price--current">2 362</span>
+                                        </div>
+                                        <div class="products-card__chart">
+                                            <svg class="products-card__chart-icon">
+                                                <use href="img/sprite.svg#chart-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="products-card__btn-wrap">
+                                        <div class="products-card__cart-btn btn btn--primary">
+                                            <svg class="products-card__cart-icon btn__icon">
+                                                <use href="img/sprite.svg#cart-icon"></use>
+                                            </svg>
+                                            <span class="products-card__btn-text">В корзину</span>
+                                        </div>
+                                        <div class="products-card__chart-mobile btn btn--primary">
+                                            <svg class="products-card__chart-mobile-icon">
+                                                <use href="img/sprite.svg#chart-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="products-card__like-btn">
+                                    <svg class="products-card__like-btn-icon">
+                                        <use href="img/sprite.svg#heart-icon"></use>
+                                    </svg>
+                                </button>
+                            </article>
+                        </div>
+                        <div class="products__slider-item  also-buy__slider-item">
+                            <article class="products-card">
+                                <a href="#" class="products-card__main">
+                                    <div class="products-card__img product-mark product-mark--new">
+                                        <img src="img/products/Resanta-600-1.png" alt="Стабилизатор напряжения РЕСАНТА АСН-600/1-И">
+                                    </div>
+                                    <div class="products-card__about">
+                                        <div class="products-card__about-model">РЕСАНТА АСН-600/1-И</div>
+                                        <div class="products-card__about-name">Стабилизатор напряжения</div>
+                                    </div>
+                                </a>
+                                <div class="products-card__bottom">
+                                    <div class="products-card__wrap-price">
+                                        <div class="products-card__price-nums price-nums">
+                                            <span class="products-card__price price price--current">7 185</span>
+                                        </div>
+                                        <div class="products-card__chart">
+                                            <svg class="products-card__chart-icon">
+                                                <use href="img/sprite.svg#chart-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="products-card__btn-wrap">
+                                        <div class="products-card__cart-btn btn btn--primary">
+                                            <svg class="products-card__cart-icon btn__icon">
+                                                <use href="img/sprite.svg#cart-icon"></use>
+                                            </svg>
+                                            <span class="products-card__btn-text">В корзину</span>
+                                        </div>
+                                        <div class="products-card__chart-mobile btn btn--primary">
+                                            <svg class="products-card__chart-mobile-icon">
+                                                <use href="img/sprite.svg#chart-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="products-card__like-btn">
+                                    <svg class="products-card__like-btn-icon">
+                                        <use href="img/sprite.svg#heart-icon"></use>
+                                    </svg>
+                                </button>
+                            </article>
+                        </div>
+                        <div class="products__slider-item  also-buy__slider-item">
+                            <article class="products-card">
+                                <a href="#" class="products-card__main">
+                                    <div class="products-card__img product-mark product-mark--sell">
+                                        <img src="img/products/DIAM-JRK-500.png" alt="Резчик швов DIAM JRK-500/13.0L 630058">
+                                    </div>
+                                    <div class="products-card__about">
+                                        <div class="products-card__about-model">DIAM JRK-500/13.0L 630058</div>
+                                        <div class="products-card__about-name">Резчик швов</div>
+                                    </div>
+                                </a>
+                                <div class="products-card__bottom">
+                                    <div class="products-card__wrap-price">
+                                        <div class="products-card__price-nums price-nums">
+                                            <span class="products-card__price price price--current">85 200</span>
+                                            <span class="products-card__price price price--old">93 200</span>
+                                        </div>
+                                        <div class="products-card__chart">
+                                            <svg class="products-card__chart-icon">
+                                                <use href="img/sprite.svg#chart-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="products-card__btn-wrap">
+                                        <div class="products-card__cart-btn btn btn--primary">
+                                            <svg class="products-card__cart-icon btn__icon">
+                                                <use href="img/sprite.svg#cart-icon"></use>
+                                            </svg>
+                                            <span class="products-card__btn-text">В корзину</span>
+                                        </div>
+                                        <div class="products-card__chart-mobile btn btn--primary">
+                                            <svg class="products-card__chart-mobile-icon">
+                                                <use href="img/sprite.svg#chart-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="products-card__like-btn">
+                                    <svg class="products-card__like-btn-icon">
+                                        <use href="img/sprite.svg#heart-icon"></use>
+                                    </svg>
+                                </button>
+                            </article>
+                        </div>
+                        <div class="products__slider-item  also-buy__slider-item">
+                            <article class="products-card">
+                                <a href="#" class="products-card__main">
+                                    <div class="products-card__img product-mark product-mark--new">
+                                        <img src="img/products/Nuova-Battipav-SUPREME.png" alt="Станок камнерезный Nuova Battipav SUPREME">
+                                    </div>
+                                    <div class="products-card__about">
+                                        <div class="products-card__about-model">Nuova Battipav SUPREME</div>
+                                        <div class="products-card__about-name">Станок камнерезный</div>
+                                    </div>
+                                </a>
+                                <div class="products-card__bottom">
+                                    <div class="products-card__wrap-price">
+                                        <div class="products-card__price-nums price-nums">
+                                            <span class="products-card__price price price--current">265 590</span>
+                                        </div>
+                                        <div class="products-card__chart">
+                                            <svg class="products-card__chart-icon">
+                                                <use href="img/sprite.svg#chart-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="products-card__btn-wrap">
+                                        <div class="products-card__cart-btn btn btn--primary">
+                                            <svg class="products-card__cart-icon btn__icon">
+                                                <use href="img/sprite.svg#cart-icon"></use>
+                                            </svg>
+                                            <span class="products-card__btn-text">В корзину</span>
+                                        </div>
+                                        <div class="products-card__chart-mobile btn btn--primary">
+                                            <svg class="products-card__chart-mobile-icon">
+                                                <use href="img/sprite.svg#chart-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="products-card__like-btn">
+                                    <svg class="products-card__like-btn-icon">
+                                        <use href="img/sprite.svg#heart-icon"></use>
+                                    </svg>
+                                </button>
+                            </article>
+                        </div>
+                        <div class="products__slider-item  also-buy__slider-item">
+                            <article class="products-card">
+                                <a href="#" class="products-card__main">
+                                    <div class="products-card__img product-mark product-mark--new">
+                                        <img src="img/products/Ресанта-ФМ-1300Э.png" alt="Фрезерная машина Ресанта ФМ-1300Э">
+                                    </div>
+                                    <div class="products-card__about">
+                                        <div class="products-card__about-model">Ресанта ФМ-1300Э</div>
+                                        <div class="products-card__about-name">Фрезерная машина</div>
+                                    </div>
+                                </a>
+                                <div class="products-card__bottom">
+                                    <div class="products-card__wrap-price">
+                                        <div class="products-card__price-nums price-nums">
+                                            <span class="products-card__price price price--current">3 849</span>
+                                        </div>
+                                        <div class="products-card__chart">
+                                            <svg class="products-card__chart-icon">
+                                                <use href="img/sprite.svg#chart-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="products-card__btn-wrap">
+                                        <div class="products-card__cart-btn btn btn--primary">
+                                            <svg class="products-card__cart-icon btn__icon">
+                                                <use href="img/sprite.svg#cart-icon"></use>
+                                            </svg>
+                                            <span class="products-card__btn-text">В корзину</span>
+                                        </div>
+                                        <div class="products-card__chart-mobile btn btn--primary">
+                                            <svg class="products-card__chart-mobile-icon">
+                                                <use href="img/sprite.svg#chart-icon"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="products-card__like-btn">
+                                    <svg class="products-card__like-btn-icon">
+                                        <use href="img/sprite.svg#heart-icon"></use>
+                                    </svg>
+                                </button>
+                            </article>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__info footer__col">
+                <a class="footer__logo logo" href="#">
+                    <img class="footer__logo-img logo__img" src="img/logo.svg" alt="logo">
+                </a>
+                <ul class="footer__info-list">
+                    <li class="footer__info-item">
+                        <a href="tel:380971993832" class="footer__info-link">+38 097 199 3832</a>
+                    </li>
+                    <li class="footer__info-item">
+                        <a href="mailto:5kvt@gmail.com" class="footer__info-link">5kvt@gmail.com</a>
+                    </li>
+                    <li class="footer__info-item">Ежедневно 9:30 - 20:00</li>
+                    <li class="footer__info-item footer__info-item--adress">
+                        <a href="#" class="footer__info-link footer__info-link--dark">улица Молочная, 12, Харьков, Харьковская область, 61001</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__menu footer__col column">
+                <div class="footer__menu-part menu-dropdown">
+                    <div class="footer__menu-title footer-title menu-dropdown__btn">Информация</div>
+                    <ul class="footer__menu-list menu-dropdown__elem">
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Доставка</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Оплата</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Производители</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Подарочные сертификаты</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Партнерская программа</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Акции</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Все товары</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__menu footer__col column">
+                <div class="footer__menu-part menu-dropdown">
+                    <div class="footer__menu-title footer-title menu-dropdown__btn">Служба поддержки</div>
+                    <ul class="footer__menu-list menu-dropdown__elem">
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Возврат товара</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__menu-part footer__menu-part--last menu-dropdown">
+                    <div class="footer__menu-title footer__menu-title--last footer-title menu-dropdown__btn">Личный кабинет</div>
+                    <ul class="footer__menu-list menu-dropdown__elem">
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Возврат товара</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">История заказов</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Избранное</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link">Рассылка</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer__callback">
+                <div class="footer__messengers">
+                    <div class="footer__messengers-inner">
+                        <a href="#" class="footer__messengers-link icon-scale-anim">
+                            <img src="img/whats-app-icon.svg" alt="whats-app" class="footer__messengers-icon">
+                        </a>
+                        <a href="#" class="footer__messengers-link icon-scale-anim">
+                            <img src="img/viber-icon.svg" alt="viber" class="footer__messengers-icon">
+                        </a>
+                    </div>
+                    <span class="footer__messengers-text">Напишите нам</span>
+                </div>
+                <a href="#" class="footer__callback-btn btn btn--primary">
+                    <svg class="footer__callback-btn-icon btn__icon">
+                        <use href="img/sprite.svg#user-icon"></use>
+                    </svg>
+                    <span class="footer__callback-btn-text btn__text">Служба поддержки</span>
+                </a>
+                <div class="footer__pay">
+                    <div class="footer__pay-title footer-title">Принимаем к оплате</div>
+                    <div class="footer__pay-ways">
+                        <a href="#" class="footer__pay-link">
+                            <img src="img/pay/master-card.svg" alt="master card" class="footer__pay-icon icon-scale-anim">
+                        </a>
+                        <a href="#" class="footer__pay-link">
+                            <img src="img/pay/maestro.svg" alt="maestro" class="footer__pay-icon icon-scale-anim">
+                        </a>
+                        <a href="#" class="footer__pay-link">
+                            <img src="img/pay/visa.svg" alt="visa" class="footer__pay-icon icon-scale-anim">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__end">
+            <span class="footer__end-text">Все права защищены. Указанная стоимость товаров и условия их приобретения действительны на текущую дату.</span>
+        </div>
+    </div>
+</footer>
+    <script src="libs/jquery.min.js"></script>
+    <script src="libs/columnizer/jquery.autocolumnlist.min.js"></script>
+    <script src="libs/slick/slick.min.js"></script>
+    <script src="libs/light-gallery/lightgallery.min.js"></script>
+    <script src="libs/light-gallery/plugins/thumbnail/lg-thumbnail.min.js"></script>
+    <script src="libs/light-gallery/plugins/zoom/lg-zoom.min.js"></script>
+    <script src="js/script.min.js"></script>
+</body>
+</html>

@@ -15,7 +15,8 @@ let path = {
     source: {
         html: [source_folder + "/*.html", "!" + source_folder + "/_*.html"],
         css: source_folder + "/scss/style.scss",
-        js:  source_folder + "/js/script.js",
+        // js:  source_folder + "/js/script.js",
+        js:  source_folder + "/js/**/*.js",
         img:  source_folder + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
         fonts:  source_folder + "/fonts/**/*.ttf",
         svg: source_folder + "/icon-sprite/**/*",
@@ -48,6 +49,7 @@ let svgSprite = require("gulp-svg-sprite");
 let cheerio = require("gulp-cheerio");
 let ttf2woff = require("gulp-ttf2woff");
 let ttf2woff2 = require("gulp-ttf2woff2");
+let rename = require("gulp-rename");
 
 function clear() {
     return del(path.clean);
@@ -100,7 +102,10 @@ function scripts() {
     return src(path.source.js)
     .pipe(fileInclude())
     .pipe(dest(path.build.js))
-    .pipe(concat("script.min.js"))
+    // .pipe(concat("script.min.js"))
+    .pipe(rename({
+        suffix: ".min"
+    }))
     .pipe(uglify())
     .pipe(dest(path.build.js))
     .pipe(browserSync.stream());
@@ -148,7 +153,8 @@ function watcher() {
         server: {
             baseDir: path.clean,
         },
-        notify: false
+        notify: false,
+        browser: "chrome"
     });
 }
 

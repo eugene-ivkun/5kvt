@@ -19,6 +19,7 @@
     "gulp-file-include": "^2.3.0",
     "gulp-group-css-media-queries": "^1.2.2",
     "gulp-imagemin": "^7.1.0",
+    "gulp-rename": "^2.0.0",
     "gulp-sass": "^5.1.0",
     "gulp-svg-sprite": "^1.5.0",
     "gulp-svgstore": "^9.0.0",
@@ -26,5 +27,8 @@
     "gulp-ttf2woff2": "^4.0.1",
     "gulp-uglify-es": "^3.0.0",
     "sass": "^1.52.2"
+  },
+  "dependencies": {
+    "swiper": "^8.4.4"
   }
 }
